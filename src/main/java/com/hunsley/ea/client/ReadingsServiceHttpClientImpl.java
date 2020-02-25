@@ -15,7 +15,10 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
+import static com.hunsley.ea.client.model.Util.DATE_FORMATTER;
+import static com.hunsley.ea.client.model.Util.DATE_TIME_FORMATTER;
 import static java.lang.String.format;
 
 /**
@@ -28,6 +31,9 @@ public class ReadingsServiceHttpClientImpl implements ReadingsService {
     private static final String READINGS_PATH = "/readings";
     private static final String TODAY_PARAM = "today";
     private static final String LATEST_PARAM = "latest";
+    private static final String FROM_PARAM = "startdate";
+    private static final String END_PARAM = "enddate";
+    private static final String SINCE_PARAM = "since";
     private static final String SORTED_PARAM = "_sorted";
     private final String scheme;
     private final String host;
@@ -46,7 +52,7 @@ public class ReadingsServiceHttpClientImpl implements ReadingsService {
     @Override
     public ReadingsResponse getLatestLevelReadings(final int stationId) throws EaApiClientException {
         try {
-            final URI uri = builder().setPath(path + "/" + stationId + "/" + READINGS_PATH)
+            final URI uri = builder(stationId)
                     .addParameter(LATEST_PARAM, null).build();
             return get(uri);
 
@@ -59,8 +65,7 @@ public class ReadingsServiceHttpClientImpl implements ReadingsService {
     @Override
     public ReadingsResponse getTodaysLevelReadings(final int stationId) throws EaApiClientException {
         try {
-            final URI uri = builder().setPath(path + "/" + stationId + "/" + READINGS_PATH)
-                    .addParameter(TODAY_PARAM,null)
+            final URI uri = builder(stationId).addParameter(TODAY_PARAM,null)
                     .addParameter(SORTED_PARAM, null).build();
             return get(uri);
 
@@ -71,20 +76,39 @@ public class ReadingsServiceHttpClientImpl implements ReadingsService {
     }
 
     @Override
-    public ReadingsResponse getLevelReadingsFromDate(int stationId, LocalDate from) throws EaApiClientException {
-        return null;
+    public ReadingsResponse getLevelReadingsFromDate(final int stationId, LocalDateTime from) throws EaApiClientException {
+        try {
+            final URI uri = builder(stationId).addParameter(SINCE_PARAM, from.format(DATE_TIME_FORMATTER))
+                    .addParameter(SORTED_PARAM, null).build();
+            return get(uri);
+
+        } catch (URISyntaxException e) {
+            log.warn(e.getMessage());
+            throw new EaApiClientException(e);
+        }
     }
 
     @Override
     public ReadingsResponse getLevelReadingsBetweenDates(int stationId, LocalDate from, LocalDate to) throws EaApiClientException {
-        return null;
+        try {
+            final URI uri = builder(stationId).addParameter(FROM_PARAM, from.format(DATE_FORMATTER))
+                    .addParameter(END_PARAM, to.format(DATE_FORMATTER))
+                    .addParameter(SORTED_PARAM, null).build();
+            return get(uri);
+
+        } catch (URISyntaxException e) {
+            log.warn(e.getMessage());
+            throw new EaApiClientException(e);
+        }
     }
 
-    private URIBuilder builder() {
-        return new URIBuilder().setScheme(scheme).setHost(host);
+    private URIBuilder builder(final int stationId) {
+        return new URIBuilder().setScheme(scheme).setHost(host).setPath(path + "/" + stationId + "/" + READINGS_PATH);
     }
 
     private ReadingsResponse get(URI uri) throws EaApiClientException {
+        log.info("Getting reading from " + uri.toString());
+
         try {
             HttpResponse response = client.execute(new HttpGet(uri));
 
@@ -98,7 +122,7 @@ public class ReadingsServiceHttpClientImpl implements ReadingsService {
 
             return objectMapper.readValue(response.getEntity().getContent(), ReadingsResponse.class);
 
-        } catch (IOException | URISyntaxException e) {
+        } catch (IOException e) {
             throw new EaApiClientException(e);
         }
     }

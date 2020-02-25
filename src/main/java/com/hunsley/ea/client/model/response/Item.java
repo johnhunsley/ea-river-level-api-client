@@ -2,12 +2,14 @@ package com.hunsley.ea.client.model.response;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+
+import static com.hunsley.ea.client.model.Util.DATE_FORMATTER;
 
 @Data
 @NoArgsConstructor
@@ -22,7 +24,7 @@ public class Item implements Comparable<Item> {
   private BigDecimal value;
 
   public LocalDateTime getLocalDateTime() {
-    return LocalDateTime.parse(dateTime, DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'"));
+    return LocalDateTime.parse(dateTime, DATE_FORMATTER);
   }
 
   @Override
