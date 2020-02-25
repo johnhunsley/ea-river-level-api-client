@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-import static com.hunsley.ea.client.model.Util.DATE_FORMATTER;
+import static com.hunsley.ea.client.model.Util.DATE_TIME_FORMATTER;
 
 @Data
 @NoArgsConstructor
@@ -24,7 +24,7 @@ public class Item implements Comparable<Item> {
   private BigDecimal value;
 
   public LocalDateTime getLocalDateTime() {
-    return LocalDateTime.parse(dateTime, DATE_FORMATTER);
+    return LocalDateTime.parse(dateTime, DATE_TIME_FORMATTER);
   }
 
   @Override
