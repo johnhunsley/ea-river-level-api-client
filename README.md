@@ -1,3 +1,7 @@
+[![CircleCI](https://circleci.com/gh/johnhunsley/ea-river-level-api-client.svg?style=svg)](https://circleci.com/gh/johnhunsley/ea-river-level-api-client)
+
+[![](https://jitpack.io/v/johnhunsley/ea-river-level-api-client.svg)](https://jitpack.io/#johnhunsley/ea-river-level-api-client)
+
 # ea-river-level-api-client
 An Apache HTTP Client 4 implementation for the UK Gov EA River Level HTTP API
 
