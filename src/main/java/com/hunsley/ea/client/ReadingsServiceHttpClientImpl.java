@@ -28,13 +28,13 @@ import static java.lang.String.format;
  */
 @Slf4j
 public class ReadingsServiceHttpClientImpl implements ReadingsService {
-    private static final String READINGS_PATH = "/readings";
-    private static final String TODAY_PARAM = "today";
-    private static final String LATEST_PARAM = "latest";
-    private static final String FROM_PARAM = "startdate";
-    private static final String END_PARAM = "enddate";
-    private static final String SINCE_PARAM = "since";
-    private static final String SORTED_PARAM = "_sorted";
+    public static final String READINGS_PATH = "readings";
+    public static final String TODAY_PARAM = "today";
+    public static final String LATEST_PARAM = "latest";
+    public static final String FROM_PARAM = "startdate";
+    public static final String END_PARAM = "enddate";
+    public static final String SINCE_PARAM = "since";
+    public static final String SORTED_PARAM = "_sorted";
     private final String scheme;
     private final String host;
     private final String path;
