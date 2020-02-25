@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Response {
+public class ReadingsResponse {
   private Meta meta;
   private SortedSet<Item> items;
 }
