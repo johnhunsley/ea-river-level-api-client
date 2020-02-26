@@ -14,7 +14,7 @@ public class ResponseSerialisationTest {
   @Test
   public void testSerialise() throws IOException {
     ObjectMapper mapper = new ObjectMapper();
-    ReadingsResponse readingsResponse = mapper.readValue(new File("src/test/resources/readings.json"), ReadingsResponse.class);
+    ReadingsResponse readingsResponse = mapper.readValue(new File("src/test/resources/readingsToday.json"), ReadingsResponse.class);
     assertNotNull(readingsResponse);
     assertEquals(50, readingsResponse.getItems().size());
   }
