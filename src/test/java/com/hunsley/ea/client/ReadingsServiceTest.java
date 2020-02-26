@@ -75,6 +75,8 @@ public class ReadingsServiceTest {
             stationId, LocalDateTime.parse("2020-02-26T10:30:00Z", DATE_TIME_FORMATTER));
         assertEquals(14, response.getItems().size());
         assertEquals(BigDecimal.valueOf(4.77), response.getItems().first().getValue());
+        assertEquals(LocalDateTime.parse("2020-02-26T14:00:00Z", DATE_TIME_FORMATTER),
+            response.getItems().first().getLocalDateTime());
     }
 
     @Test

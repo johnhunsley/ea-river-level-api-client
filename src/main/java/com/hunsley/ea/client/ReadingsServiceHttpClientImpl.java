@@ -1,8 +1,17 @@
 package com.hunsley.ea.client;
 
+import static com.hunsley.ea.client.model.Util.DATE_FORMATTER;
+import static com.hunsley.ea.client.model.Util.DATE_TIME_FORMATTER;
+import static java.lang.String.format;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hunsley.ea.client.model.EaApiClientException;
 import com.hunsley.ea.client.model.response.ReadingsResponse;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
@@ -10,16 +19,6 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.HttpClientBuilder;
-
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-
-import static com.hunsley.ea.client.model.Util.DATE_FORMATTER;
-import static com.hunsley.ea.client.model.Util.DATE_TIME_FORMATTER;
-import static java.lang.String.format;
 
 /**
  * Creates an {@link HttpClient} instance which executes requests to the Readings API Service
@@ -89,7 +88,7 @@ public class ReadingsServiceHttpClientImpl implements ReadingsService {
     }
 
     @Override
-    public ReadingsResponse getLevelReadingsBetweenDates(int stationId, LocalDate from, LocalDate to) throws EaApiClientException {
+    public ReadingsResponse getLevelReadingsBetweenDates(final int stationId, LocalDate from, LocalDate to) throws EaApiClientException {
         try {
             final URI uri = builder(stationId).addParameter(FROM_PARAM, from.format(DATE_FORMATTER))
                     .addParameter(END_PARAM, to.format(DATE_FORMATTER))
@@ -102,10 +101,17 @@ public class ReadingsServiceHttpClientImpl implements ReadingsService {
         }
     }
 
+    /**
+     * Builds a URI to the readings API with the given station Id as a path variable
+     */
     private URIBuilder builder(final int stationId) {
         return new URIBuilder().setScheme(scheme).setHost(host).setPath(path + "/" + stationId + "/" + READINGS_PATH);
     }
 
+    /**
+     * GET the response from the given URI. Will throw a {@link EaApiClientException} if the response status
+     * is anything other than 200 OK
+     */
     private ReadingsResponse get(URI uri) throws EaApiClientException {
         log.info("Getting reading from " + uri.toString());
 
