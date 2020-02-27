@@ -1,7 +1,7 @@
 package com.hunsley.ea.client.model.response;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import java.util.SortedSet;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ReadingsResponse {
+public class Response {
   private Meta meta;
-  private SortedSet<Item> items;
+  private List<Item> items;
 }

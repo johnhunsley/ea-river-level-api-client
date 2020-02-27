@@ -1,7 +1,7 @@
 package com.hunsley.ea.client;
 
 import com.hunsley.ea.client.model.EaApiClientException;
-import com.hunsley.ea.client.model.response.ReadingsResponse;
+import com.hunsley.ea.client.model.response.Response;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -17,14 +17,14 @@ public interface ReadingsService {
    *
    * ?latest
    */
-  ReadingsResponse getLatestLevelReadings(int stationId) throws EaApiClientException;
+  Response getLatestLevelReadings(int stationId) throws EaApiClientException;
 
   /**
    * Return all the readings taken today for each included measure.
    *
    * ?today&_sorted
    */
-  ReadingsResponse getTodaysLevelReadings(int stationId) throws EaApiClientException;
+  Response getTodaysLevelReadings(int stationId) throws EaApiClientException;
 
   /**
    *  Return the readings taken since the given date time (not inclusive), up to the specified _limit.
@@ -34,7 +34,7 @@ public interface ReadingsService {
    *
    * ?since=2016-09-07T10:30:00Z
    */
-  ReadingsResponse getLevelReadingsFromDate(int stationId, LocalDateTime from) throws EaApiClientException;
+  Response getLevelReadingsFromDate(int stationId, LocalDateTime from) throws EaApiClientException;
 
   /**
    * Return the readings taken on the specified range of days for each included measure, up to the specified _limit.
@@ -42,7 +42,7 @@ public interface ReadingsService {
    *
    * ?startdate=2015-02-05&enddate=2015-02-07
    */
-  ReadingsResponse getLevelReadingsBetweenDates(int stationId, LocalDate from, LocalDate to) throws EaApiClientException;
+  Response getLevelReadingsBetweenDates(int stationId, LocalDate from, LocalDate to) throws EaApiClientException;
 
 
 }

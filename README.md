@@ -15,4 +15,7 @@ https://environment.data.gov.uk/flood-monitoring/id/stations/2077/readings?lates
 
 The API docment can be found here - https://environment.data.gov.uk/flood-monitoring/doc/reference
 
-This client api provides a serializable model for both request and readingsResponse for data from a given station id using Apache HTTP 4 Client. The first release of this client will read the latest, today or values from a given date to now, of the defined station id. Where id is a path variable e.g. 2077 (Welsh Bridge - River Severn). 
+This client api provides a serializable model for both request and response for data from a given station id using Apache HTTP 4 Client. The first release of this client will read the latest, today or values from a given date to now, of the defined station id. Where id is a path variable e.g. 2077 (Welsh Bridge - River Severn).
+
+Find the station Id by calling the RiverStationService and listing the stations for a given river name, e.g. River Severn. 
+Use the selected station notation value as the id when calling the ReadingsService to get specific reading items for that station. 

@@ -1,0 +1,629 @@
+{
+  "@context" : "http://environment.data.gov.uk/flood-monitoring/meta/context.jsonld" ,
+  "meta" : {
+    "publisher" : "Environment Agency" ,
+    "licence" : "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" ,
+    "documentation" : "http://environment.data.gov.uk/flood-monitoring/doc/reference" ,
+    "version" : "0.9" ,
+    "comment" : "Status: Beta service" ,
+    "hasFormat" : [ "http://environment.data.gov.uk/flood-monitoring/id/stations.csv?riverName=River%20Severn", "http://environment.data.gov.uk/flood-monitoring/id/stations.rdf?riverName=River%20Severn", "http://environment.data.gov.uk/flood-monitoring/id/stations.ttl?riverName=River%20Severn", "http://environment.data.gov.uk/flood-monitoring/id/stations.html?riverName=River%20Severn" ]
+  }
+,
+  "items" : [ {
+    "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2642" ,
+    "RLOIid" : "2092" ,
+    "catchmentName" : "Worcestershire Middle Severn" ,
+    "dateOpened" : "2005-11-04" ,
+    "easting" : 384019 ,
+    "label" : "Worcester (Barbourne)" ,
+    "lat" : 52.206967 ,
+    "long" : -2.235272 ,
+    "measures" : [ {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2642-level-stage-i-15_min-mASD" ,
+      "parameter" : "level" ,
+      "parameterName" : "Water Level" ,
+      "period" : 900 ,
+      "qualifier" : "Stage" ,
+      "unitName" : "mASD"
+    }
+    ] ,
+    "northing" : 256554 ,
+    "notation" : "2642" ,
+    "riverName" : "River Severn" ,
+    "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2642/stageScale" ,
+    "stationReference" : "2642" ,
+    "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+    "town" : "Worcester" ,
+    "wiskiID" : "2642"
+  }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2077" ,
+      "RLOIid" : "2036" ,
+      "catchmentName" : "Severn Uplands" ,
+      "dateOpened" : "1985-12-27" ,
+      "easting" : 348880 ,
+      "label" : "Welsh Bridge" ,
+      "lat" : 52.709797 ,
+      "long" : -2.75808 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2077-level-stage-i-15_min-mASD" ,
+        "parameter" : "level" ,
+        "parameterName" : "Water Level" ,
+        "period" : 900 ,
+        "qualifier" : "Stage" ,
+        "unitName" : "mASD"
+      }
+      ] ,
+      "northing" : 312730 ,
+      "notation" : "2077" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2077/stageScale" ,
+      "stationReference" : "2077" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Shrewsbury" ,
+      "wiskiID" : "2077"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2165" ,
+      "RLOIid" : "2063" ,
+      "catchmentName" : "Severn Vale" ,
+      "dateOpened" : "1985-12-27" ,
+      "easting" : 382730 ,
+      "label" : "Gloucester (Severn)" ,
+      "lat" : 51.864982 ,
+      "long" : -2.252201 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2165-level-stage-i-15_min-mASD" ,
+        "parameter" : "level" ,
+        "parameterName" : "Water Level" ,
+        "period" : 900 ,
+        "qualifier" : "Stage" ,
+        "unitName" : "mASD"
+      }
+      ] ,
+      "northing" : 218520 ,
+      "notation" : "2165" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2165/stageScale" ,
+      "stationReference" : "2165" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Gloucester" ,
+      "wiskiID" : "2165"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2606" ,
+      "RLOIid" : "2078" ,
+      "catchmentName" : "Severn Vale" ,
+      "dateOpened" : "1995-12-01" ,
+      "easting" : 386798 ,
+      "label" : "Deerhurst" ,
+      "lat" : 51.969234 ,
+      "long" : -2.193572 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2606-flow--i-15_min-m3_s" ,
+        "parameter" : "flow" ,
+        "parameterName" : "Flow" ,
+        "period" : 900 ,
+        "qualifier" : "" ,
+        "unitName" : "m3/s"
+      }
+      , {
+          "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2606-level-stage-i-15_min-mASD" ,
+          "parameter" : "level" ,
+          "parameterName" : "Water Level" ,
+          "period" : 900 ,
+          "qualifier" : "Stage" ,
+          "unitName" : "mASD"
+        }
+      ] ,
+      "northing" : 230103 ,
+      "notation" : "2606" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2606/stageScale" ,
+      "stationReference" : "2606" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Deerhurst" ,
+      "wiskiID" : "2606"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2087" ,
+      "RLOIid" : "2041" ,
+      "catchmentName" : "Severn Vale" ,
+      "dateOpened" : "1989-04-21" ,
+      "easting" : 388900 ,
+      "label" : "Mythe Bridge" ,
+      "lat" : 52.00171 ,
+      "long" : -2.163093 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2087-level-stage-i-15_min-mASD" ,
+        "parameter" : "level" ,
+        "parameterName" : "Water Level" ,
+        "period" : 900 ,
+        "qualifier" : "Stage" ,
+        "unitName" : "mASD"
+      }
+      ] ,
+      "northing" : 233710 ,
+      "notation" : "2087" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2087/stageScale" ,
+      "stationReference" : "2087" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "The Mythe" ,
+      "wiskiID" : "2087"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2175" ,
+      "RLOIid" : "2067" ,
+      "catchmentName" : "Severn Uplands" ,
+      "dateOpened" : "1991-12-27" ,
+      "easting" : 332960 ,
+      "label" : "Crew Green" ,
+      "lat" : 52.735739 ,
+      "long" : -2.994315 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2175-level-stage-i-15_min-mASD" ,
+        "parameter" : "level" ,
+        "parameterName" : "Water Level" ,
+        "period" : 900 ,
+        "qualifier" : "Stage" ,
+        "unitName" : "mASD"
+      }
+      ] ,
+      "northing" : 315810 ,
+      "notation" : "2175" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2175/stageScale" ,
+      "stationReference" : "2175" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusSuspended" ,
+      "town" : "Crewgreen" ,
+      "wiskiID" : "2175"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2616" ,
+      "RLOIid" : "2081" ,
+      "catchmentName" : "Severn Vale" ,
+      "dateOpened" : "2002-11-01" ,
+      "easting" : 385084 ,
+      "label" : "Kempsey Yacht Club" ,
+      "lat" : 52.158602 ,
+      "long" : -2.219449 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2616-level-stage-i-15_min-mASD" ,
+        "parameter" : "level" ,
+        "parameterName" : "Water Level" ,
+        "period" : 900 ,
+        "qualifier" : "Stage" ,
+        "unitName" : "mASD"
+      }
+      ] ,
+      "northing" : 251171 ,
+      "notation" : "2616" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2616/stageScale" ,
+      "stationReference" : "2616" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Callow End" ,
+      "wiskiID" : "2616"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2032" ,
+      "RLOIid" : "2022" ,
+      "catchmentName" : "Severn Vale" ,
+      "dateOpened" : "1970-06-05" ,
+      "easting" : 386330 ,
+      "label" : "Saxons Lode" ,
+      "lat" : 52.049661 ,
+      "long" : -2.200744 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2032-flow--i-15_min-m3_s" ,
+        "parameter" : "flow" ,
+        "parameterName" : "Flow" ,
+        "period" : 900 ,
+        "qualifier" : "" ,
+        "unitName" : "m3/s"
+      }
+      , {
+          "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2032-level-stage-i-15_min-mASD" ,
+          "parameter" : "level" ,
+          "parameterName" : "Water Level" ,
+          "period" : 900 ,
+          "qualifier" : "Stage" ,
+          "unitName" : "mASD"
+        }
+      ] ,
+      "northing" : 239050 ,
+      "notation" : "2032" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2032/stageScale" ,
+      "stationReference" : "2032" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Naunton" ,
+      "wiskiID" : "2032"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2195" ,
+      "RLOIid" : "2071" ,
+      "catchmentName" : "Severn Vale" ,
+      "dateOpened" : "1993-04-23" ,
+      "easting" : 366740 ,
+      "label" : "Sharpness" ,
+      "lat" : 51.717437 ,
+      "long" : -2.482837 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2195-level-stage-i-5_min-mASD" ,
+        "parameter" : "level" ,
+        "parameterName" : "Water Level" ,
+        "period" : 300 ,
+        "qualifier" : "Stage" ,
+        "unitName" : "mASD"
+      }
+      ] ,
+      "northing" : 202190 ,
+      "notation" : "2195" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2195/stageScale" ,
+      "stationReference" : "2195" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Newtown" ,
+      "wiskiID" : "2195"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2102" ,
+      "RLOIid" : "2051" ,
+      "catchmentName" : "Severn Vale" ,
+      "dateOpened" : "1993-03-01" ,
+      "easting" : 376910 ,
+      "label" : "Minsterworth" ,
+      "lat" : 51.850206 ,
+      "long" : -2.336612 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2102-level-stage-i-15_min-mASD" ,
+        "parameter" : "level" ,
+        "parameterName" : "Water Level" ,
+        "period" : 900 ,
+        "qualifier" : "Stage" ,
+        "unitName" : "mASD"
+      }
+      ] ,
+      "northing" : 216900 ,
+      "notation" : "2102" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2102/stageScale" ,
+      "stationReference" : "2102" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Minsterworth" ,
+      "wiskiID" : "2102"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2005" ,
+      "RLOIid" : "2004" ,
+      "catchmentName" : "Severn Uplands" ,
+      "dateOpened" : "1952-04-28" ,
+      "easting" : 341190 ,
+      "label" : "Montford" ,
+      "lat" : 52.724474 ,
+      "long" : -2.872198 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2005-flow--i-15_min-Ml_d" ,
+        "parameter" : "flow" ,
+        "parameterName" : "Flow" ,
+        "period" : 900 ,
+        "qualifier" : "" ,
+        "unitName" : "Ml/d"
+      }
+      , {
+          "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2005-flow-speed-i-15_min-Ml_d" ,
+          "parameter" : "flow" ,
+          "parameterName" : "Flow" ,
+          "period" : 900 ,
+          "qualifier" : "Speed" ,
+          "unitName" : "Ml/d"
+        }
+      , {
+          "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2005-level-stage-i-15_min-mASD" ,
+          "parameter" : "level" ,
+          "parameterName" : "Water Level" ,
+          "period" : 900 ,
+          "qualifier" : "Stage" ,
+          "unitName" : "mASD"
+        }
+      ] ,
+      "northing" : 314450 ,
+      "notation" : "2005" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2005/stageScale" ,
+      "stationReference" : "2005" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Montford" ,
+      "wiskiID" : "2005"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2618" ,
+      "RLOIid" : "2167" ,
+      "catchmentName" : "Severn Vale" ,
+      "dateOpened" : "2002-02-28" ,
+      "easting" : 382412 ,
+      "label" : "Sandhurst" ,
+      "lat" : 51.887818 ,
+      "long" : -2.256949 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2618-level-stage-i-15_min-mASD" ,
+        "parameter" : "level" ,
+        "parameterName" : "Water Level" ,
+        "period" : 900 ,
+        "qualifier" : "Stage" ,
+        "unitName" : "mASD"
+      }
+      ] ,
+      "northing" : 221061 ,
+      "notation" : "2618" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2618/stageScale" ,
+      "stationReference" : "2618" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Maisemore" ,
+      "wiskiID" : "2618"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2831" ,
+      "RLOIid" : "2095" ,
+      "catchmentName" : "Severn Uplands" ,
+      "dateOpened" : "1994-05-24" ,
+      "easting" : 334470 ,
+      "label" : "Cae Howel (New Cut)" ,
+      "lat" : 52.74743 ,
+      "long" : -2.972211 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2831-level-stage-i-15_min-mASD" ,
+        "parameter" : "level" ,
+        "parameterName" : "Water Level" ,
+        "period" : 900 ,
+        "qualifier" : "Stage" ,
+        "unitName" : "mASD"
+      }
+      ] ,
+      "northing" : 317090 ,
+      "notation" : "2831" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2831/stageScale" ,
+      "stationReference" : "2831" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Melverley" ,
+      "wiskiID" : "2831"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2071" ,
+      "RLOIid" : "2166" ,
+      "catchmentName" : "Severn Vale" ,
+      "dateOpened" : "1978-01-01" ,
+      "easting" : 381872 ,
+      "label" : "Ashleworth" ,
+      "lat" : 51.922936 ,
+      "long" : -2.265002 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2071-level-stage-i-15_min-mASD" ,
+        "parameter" : "level" ,
+        "parameterName" : "Water Level" ,
+        "period" : 900 ,
+        "qualifier" : "Stage" ,
+        "unitName" : "mASD"
+      }
+      ] ,
+      "northing" : 224969 ,
+      "notation" : "2071" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2071/stageScale" ,
+      "stationReference" : "2071" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Ashleworth" ,
+      "wiskiID" : "2071"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2180" ,
+      "RLOIid" : "2069" ,
+      "catchmentName" : "Worcestershire Middle Severn" ,
+      "dateOpened" : "1985-11-08" ,
+      "easting" : 371890 ,
+      "label" : "Bridgnorth" ,
+      "lat" : 52.534933 ,
+      "long" : -2.415835 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2180-level-stage-i-15_min-mASD" ,
+        "parameter" : "level" ,
+        "parameterName" : "Water Level" ,
+        "period" : 900 ,
+        "qualifier" : "Stage" ,
+        "unitName" : "mASD"
+      }
+      ] ,
+      "northing" : 293090 ,
+      "notation" : "2180" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2180/stageScale" ,
+      "stationReference" : "2180" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Bridgnorth" ,
+      "wiskiID" : "2180"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2134" ,
+      "RLOIid" : "2058" ,
+      "catchmentName" : "Worcestershire Middle Severn" ,
+      "dateOpened" : "1977-09-07" ,
+      "easting" : 364570 ,
+      "label" : "Buildwas" ,
+      "lat" : 52.636354 ,
+      "long" : -2.524962 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2134-flow--i-15_min-m3_s" ,
+        "parameter" : "flow" ,
+        "parameterName" : "Flow" ,
+        "period" : 900 ,
+        "qualifier" : "" ,
+        "unitName" : "m3/s"
+      }
+      , {
+          "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2134-level-stage-i-15_min-mASD" ,
+          "parameter" : "level" ,
+          "parameterName" : "Water Level" ,
+          "period" : 900 ,
+          "qualifier" : "Stage" ,
+          "unitName" : "mASD"
+        }
+      ] ,
+      "northing" : 304420 ,
+      "notation" : "2134" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2134/stageScale" ,
+      "stationReference" : "2134" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Buildwas" ,
+      "wiskiID" : "2134"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2153" ,
+      "RLOIid" : "2059" ,
+      "catchmentName" : "Severn Vale" ,
+      "dateOpened" : "1982-01-01" ,
+      "easting" : 376090 ,
+      "label" : "Epney" ,
+      "lat" : 51.797035 ,
+      "long" : -2.348106 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2153-level-stage-i-15_min-mASD" ,
+        "parameter" : "level" ,
+        "parameterName" : "Water Level" ,
+        "period" : 900 ,
+        "qualifier" : "Stage" ,
+        "unitName" : "mASD"
+      }
+      ] ,
+      "northing" : 210990 ,
+      "notation" : "2153" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2153/stageScale" ,
+      "stationReference" : "2153" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Epney" ,
+      "wiskiID" : "2153"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2057" ,
+      "RLOIid" : "2031" ,
+      "catchmentName" : "Severn Vale" ,
+      "dateOpened" : "1971-07-01" ,
+      "easting" : 384490 ,
+      "label" : "Haw Bridge" ,
+      "lat" : 51.948918 ,
+      "long" : -2.227065 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2057-level-stage-i-15_min-mASD" ,
+        "parameter" : "level" ,
+        "parameterName" : "Water Level" ,
+        "period" : 900 ,
+        "qualifier" : "Stage" ,
+        "unitName" : "mASD"
+      }
+      ] ,
+      "northing" : 227850 ,
+      "notation" : "2057" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2057/stageScale" ,
+      "stationReference" : "2057" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Apperley" ,
+      "wiskiID" : "2057"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2085" ,
+      "RLOIid" : "2039" ,
+      "catchmentName" : "Worcestershire Middle Severn" ,
+      "dateOpened" : "1986-01-02" ,
+      "easting" : 384680 ,
+      "label" : "Diglis" ,
+      "lat" : 52.179799 ,
+      "long" : -2.225461 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2085-level-stage-i-15_min-mASD" ,
+        "parameter" : "level" ,
+        "parameterName" : "Water Level" ,
+        "period" : 900 ,
+        "qualifier" : "Stage" ,
+        "unitName" : "mASD"
+      }
+      ] ,
+      "northing" : 253530 ,
+      "notation" : "2085" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2085/stageScale" ,
+      "stationReference" : "2085" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Worcester" ,
+      "wiskiID" : "2085"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2001" ,
+      "RLOIid" : "2001" ,
+      "catchmentName" : "Worcestershire Middle Severn" ,
+      "dateOpened" : "1921-04-01" ,
+      "easting" : 378150 ,
+      "label" : "Bewdley" ,
+      "lat" : 52.383563 ,
+      "long" : -2.322438 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2001-flow--i-15_min-m3_s" ,
+        "parameter" : "flow" ,
+        "parameterName" : "Flow" ,
+        "period" : 900 ,
+        "qualifier" : "" ,
+        "unitName" : "m3/s"
+      }
+      , {
+          "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2001-level-stage-i-15_min-mASD" ,
+          "parameter" : "level" ,
+          "parameterName" : "Water Level" ,
+          "period" : 900 ,
+          "qualifier" : "Stage" ,
+          "unitName" : "mASD"
+        }
+      ] ,
+      "northing" : 276220 ,
+      "notation" : "2001" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2001/stageScale" ,
+      "stationReference" : "2001" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Bewdley" ,
+      "wiskiID" : "2001"
+    }
+  , {
+      "@id" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2644" ,
+      "RLOIid" : "9030" ,
+      "catchmentName" : "Severn Vale" ,
+      "dateOpened" : "2016-04-11" ,
+      "easting" : 382669 ,
+      "gridReference" : "SO8266921084" ,
+      "label" : "Sandhurst Horn's Ditch" ,
+      "lat" : 51.888033 ,
+      "long" : -2.253216 ,
+      "measures" : [ {
+        "@id" : "http://environment.data.gov.uk/flood-monitoring/id/measures/2644-level-stage-i-15_min-mASD" ,
+        "parameter" : "level" ,
+        "parameterName" : "Water Level" ,
+        "period" : 900 ,
+        "qualifier" : "Stage" ,
+        "unitName" : "mASD"
+      }
+      ] ,
+      "northing" : 221084 ,
+      "notation" : "2644" ,
+      "riverName" : "River Severn" ,
+      "stageScale" : "http://environment.data.gov.uk/flood-monitoring/id/stations/2644/stageScale" ,
+      "stationReference" : "2644" ,
+      "status" : "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive" ,
+      "town" : "Maisemore" ,
+      "wiskiID" : "2644"
+    }
+  ]
+}
