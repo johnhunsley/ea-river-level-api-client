@@ -5,7 +5,6 @@ import com.hunsley.ea.client.model.response.Item;
 import com.hunsley.ea.client.model.response.Response;
 
 /**
- *
  * @author jhunsley
  */
 public interface RiverStationsService {
