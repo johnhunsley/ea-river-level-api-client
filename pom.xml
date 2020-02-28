@@ -22,7 +22,7 @@
 
     <groupId>com.hunsley.ea</groupId>
     <artifactId>river-api-client</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <name>ea-river-level-api-client</name>
     <description>An Apache HTTP Client 4 implementation for the UK Gov EA River Level HTTP API</description>
 
